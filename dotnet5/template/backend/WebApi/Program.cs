@@ -1,8 +1,8 @@
+using App.Metrics.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using App.Metrics.AspNetCore;
 
-namespace Api
+namespace WebApi
 {
     public class Program
     {

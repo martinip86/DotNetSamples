@@ -7,6 +7,14 @@ const typeDefs = gql`
     date: String
     temperatureC: Float
     summary: String
+    weatherDefinition: WeatherDefinition
+  }
+
+  type WeatherDefinition {
+    summary: String
+    description: String
+    tempRangeStart: Int
+    tempRangeEnd: Int
   }
  
   type Query {
@@ -17,13 +25,21 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     weather: async () => {
-      const { data } = await axios.get("https://localhost:32798/weatherforecast",  { httpsAgent: new https.Agent({  
+      const { data } = await axios.get("https://localhost:32800/weatherforecast",  { httpsAgent: new https.Agent({  
         rejectUnauthorized: false
       }) });
-      
+
       return data;      
     },
   },
+  WeatherForecast: {
+    weatherDefinition: async (parent) => {
+      // TODO: call grpc service
+      return {
+        summary: parent.summary 
+      } 
+    }
+  }
 };
  
 const server = new ApolloServer({ typeDefs, resolvers });

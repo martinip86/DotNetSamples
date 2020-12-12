@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using App.Metrics;
+using GrpcService.Services;
 
 namespace GrpcService
 {
@@ -38,7 +39,7 @@ namespace GrpcService
             {
                 endpoints.MapControllers();
 
-                endpoints.MapGrpcService<GreeterService>();
+                endpoints.MapGrpcService<WeatherService>();
 
                 endpoints.MapGet("/", async context =>
                 {
