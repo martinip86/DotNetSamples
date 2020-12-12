@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{046C4ED5-3
 		Readme.md = Readme.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcService", "GrpcService\GrpcService.csproj", "{B1E26B9D-AA63-4075-8DFB-1C8E5A95EF0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{802930E0-C484-4CDD-A0E7-820CEC01CE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{802930E0-C484-4CDD-A0E7-820CEC01CE18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{802930E0-C484-4CDD-A0E7-820CEC01CE18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1E26B9D-AA63-4075-8DFB-1C8E5A95EF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E26B9D-AA63-4075-8DFB-1C8E5A95EF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E26B9D-AA63-4075-8DFB-1C8E5A95EF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E26B9D-AA63-4075-8DFB-1C8E5A95EF0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
